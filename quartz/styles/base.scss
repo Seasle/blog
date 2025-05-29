@@ -20,13 +20,19 @@ section {
   color: var(--darkgray);
 }
 
+// TODO: Patched
+* {
+  scrollbar-color: var(--dark) var(--light);
+}
+
 .text-highlight {
   background-color: var(--textHighlight);
   padding: 0 0.1rem;
   border-radius: 5px;
 }
 ::selection {
-  background: color-mix(in srgb, var(--tertiary) 60%, rgba(255, 255, 255, 0));
+  // TODO: Patched
+  background: color-mix(in srgb, hsla(34, 37%, 70%, 1) 30%, transparent);
   color: var(--darkgray);
 }
 

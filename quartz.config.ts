@@ -8,47 +8,48 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Frontend Garden",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "goatcounter",
+      websiteId: "seasle",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    locale: "ru-RU",
+    baseUrl: "seasle.ru",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Inter",
+        body: "Inter",
+        code: "Cascadia Code",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "hsla(35, 36%, 96%, 1)", // background-primary
+          lightgray: "hsla(34, 34%, 90%, 1)", // background-secondary
+          gray: "hsla(37, 38%, 83%, 1)", // color-l-gray-60
+          darkgray: "hsla(31, 45%, 24%, 1)", // text-normal
+          dark: "hsla(33, 54%, 17%, 1)", // text-heading
+          secondary: "hsla(149, 50%, 39%, 1)", // link-external-color
+          tertiary: "hsla(148, 48%, 47%, 1)", // link-external-color-hover
+          highlight: "hsla(186, 64%, 46%, 0.2)", // color-l-alpha-blue
+          textHighlight: "hsla(44, 100%, 50%, 0.2)", // color-l-alpha-yellow
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "hsla(30, 19%, 15%, 1)", // background-primary
+          lightgray: "hsla(29, 16%, 13%, 1)", // background-secondary
+          gray: "hsla(33, 27%, 33%, 1)", // color-d-gray-60
+          darkgray: "hsla(34, 39%, 74%, 1)", // text-normal
+          dark: "hsla(32, 48%, 85%, 1)", // text-heading
+          secondary: "hsla(154, 57%, 42%, 1)", // link-external-color
+          tertiary: "hsla(152, 51%, 54%, 1)", // link-external-color-hover
+          highlight: "hsla(186, 64%, 46%, 0.2)", // color-d-alpha-blue
+          textHighlight: "hsla(44, 100%, 50%, 0.2)", // color-d-alpha-yellow
         },
       },
     },
