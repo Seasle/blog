@@ -19,7 +19,7 @@ body {
   color: var(--darkgray);
 }
 
-// TODO: Patched
+// NOTE: Patched
 * {
   scrollbar-color: var(--dark) var(--light);
 }
@@ -30,7 +30,7 @@ body {
   border-radius: 5px;
 }
 ::selection {
-  // TODO: Patched
+  // NOTE: Patched
   background: color-mix(in srgb, hsla(34, 37%, 70%, 1) 30%, transparent);
   color: var(--darkgray);
 }
@@ -168,7 +168,8 @@ a {
 }
 
 .page {
-  max-width: calc(#{map.get($breakpoints, desktop)} + 300px);
+  // NOTE: Patched
+  max-width: calc(#{map.get($breakpoints, desktop)} + 600px);
   margin: 0 auto;
   & article {
     & > h1 {
