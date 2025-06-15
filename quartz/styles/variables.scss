@@ -8,10 +8,14 @@
  * assuming mobile < desktop
  */
 $breakpoints: (
+  // NOTE: Patched
+  shrinkMobile: 600px,
   mobile: 800px,
-  desktop: 1200px,
+  desktop: 1200px
 );
 
+// NOTE: Patched
+$shrinkMobile: "(max-width: #{map.get($breakpoints, shrinkMobile)})";
 $mobile: "(max-width: #{map.get($breakpoints, mobile)})";
 $tablet: "(min-width: #{map.get($breakpoints, mobile)}) and (max-width: #{map.get($breakpoints, desktop)})";
 $desktop: "(min-width: #{map.get($breakpoints, desktop)})";

@@ -251,6 +251,17 @@ a {
         padding: 0;
         padding-top: 2rem;
       }
+
+      // NOTE: Patched
+      @media all and ($shrinkMobile) {
+        gap: 0.5rem 0;
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+
+        & > .flex-component {
+          grid-column: 1 / -1;
+        }
+      }
     }
 
     & .sidebar.right {
